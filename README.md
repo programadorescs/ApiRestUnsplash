@@ -23,8 +23,8 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - ui: Contiene la interfaz de usuario, adaptador y el viewmodel.
 
 ## Imagenes del resultado del endpoint
-![Image text](https://github.com/programadorescs/RetrofitMaestroDetalle/blob/master/app/src/main/assets/listarProductos.png)
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/Estructura_De_La_App.png)
 
 
 ## Imagenes de la app
-![Image text](https://github.com/programadorescs/RetrofitMaestroDetalle/blob/master/app/src/main/assets/listarProductos.png)
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
