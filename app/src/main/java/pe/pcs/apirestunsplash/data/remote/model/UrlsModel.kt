@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.data.model
+package pe.pcs.apirestunsplash.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 

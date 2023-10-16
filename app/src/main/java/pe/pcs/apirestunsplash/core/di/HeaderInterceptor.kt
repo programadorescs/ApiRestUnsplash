@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.data.di
+package pe.pcs.apirestunsplash.core.di
 
 import okhttp3.Interceptor
 import okhttp3.Response

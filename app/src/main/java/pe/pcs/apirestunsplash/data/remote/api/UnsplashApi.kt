@@ -1,6 +1,6 @@
-package pe.pcs.apirestunsplash.data.api
+package pe.pcs.apirestunsplash.data.remote.api
 
-import pe.pcs.apirestunsplash.data.model.PhotoModel
+import pe.pcs.apirestunsplash.data.remote.model.PhotoModel
 import retrofit2.http.GET
 
 interface UnsplashApi {

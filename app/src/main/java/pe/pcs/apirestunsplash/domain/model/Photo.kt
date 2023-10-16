@@ -1,6 +1,7 @@
 package pe.pcs.apirestunsplash.domain.model
 
-import pe.pcs.apirestunsplash.data.model.PhotoModel
+import pe.pcs.apirestunsplash.data.local.entity.PhotoEntity
+import pe.pcs.apirestunsplash.data.remote.model.PhotoModel
 
 data class Photo(
     val id: String = "",
@@ -8,7 +9,7 @@ data class Photo(
     val updatedAt: String = "",
     val description: String? = "",
     val likes: Int,
-    val urls: Urls? = Urls()
+    var urls: Urls? = Urls()
 )
 
 fun PhotoModel.toDomain() = Photo(
@@ -18,4 +19,12 @@ fun PhotoModel.toDomain() = Photo(
     description = description,
     likes = likes,
     urls = urls?.toDomain()
+)
+
+fun PhotoEntity.toDomain() = Photo(
+    id = id,
+    createdAt = createdAt,
+    updatedAt = updatedAt,
+    description = description,
+    likes = likes
 )

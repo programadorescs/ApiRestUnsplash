@@ -1,13 +1,18 @@
-package pe.pcs.apirestunsplash.data.di
+package pe.pcs.apirestunsplash.core.di
 
+import android.content.Context
+import androidx.room.Room
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import pe.pcs.apirestunsplash.core.ConstantApp
-import pe.pcs.apirestunsplash.data.api.UnsplashApi
+import pe.pcs.apirestunsplash.data.local.dao.PhotoDao
+import pe.pcs.apirestunsplash.data.local.database.AppDatabase
+import pe.pcs.apirestunsplash.data.remote.api.UnsplashApi
 import pe.pcs.apirestunsplash.data.repository.UnsplashRepositoryImpl
 import pe.pcs.apirestunsplash.domain.repository.UnsplashRepository
 import retrofit2.Retrofit
@@ -16,7 +21,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object NetworkModule {
+object InjectionModule {
+
+    //******** Inyectando RETROFIT ********//
 
     @Singleton
     @Provides
@@ -46,8 +53,24 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideUnplashRepository(api: UnsplashApi): UnsplashRepository {
-        return UnsplashRepositoryImpl(api)
+    fun provideUnplashRepository(api: UnsplashApi, dao: PhotoDao): UnsplashRepository {
+        return UnsplashRepositoryImpl(api, dao)
+    }
+
+    //******** Inyectando ROOM ********//
+
+    private const val DATABASE_NAME = "photo_db"
+
+    @Singleton
+    @Provides
+    fun provideRoom(@ApplicationContext context: Context): AppDatabase {
+        return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME).build()
+    }
+
+    @Singleton
+    @Provides
+    fun providePhotoDao(db: AppDatabase): PhotoDao {
+        return db.photoDao()
     }
 
 }

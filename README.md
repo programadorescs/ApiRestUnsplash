@@ -14,6 +14,7 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - ViewModel y LiveData: Para la implementación del patrón MVVM.
 - Dagger Hilt: Para la inyección de dependencias.
 - Coil para cargar las imagenes.
+- ROOM: Para almacenar la info recibida de la api.
 
 ## Estructura del proyecto
 
@@ -23,8 +24,10 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - ui: Contiene la interfaz de usuario, adaptador y el viewmodel.
 
 ## Imagenes del resultado del endpoint
-![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/Estructura_De_La_App.png)
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
 
+## Estructura de la app
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
 
 ## Imagenes de la app
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
