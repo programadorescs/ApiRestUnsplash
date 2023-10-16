@@ -18,8 +18,8 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 
 ## Estructura del proyecto
 
-- core: Contiene las clases comunes para la implementación de mensajes, constantes y el manejo de los estados de respuestas.
-- data: Contiene las clases, interfaces para el consumo de la api, inyeccion de dependencia, etc.
+- core: Contiene las clases comunes para la implementación de mensajes, constantes, modulo de inyeccion de dependencia y el manejo de los estados de respuestas.
+- data: Contiene las clases, interfaces para el consumo de la api, manejo de room, implementacion del repositorio, etc.
 - domain: Contiene el modelo, repositorio y el use case.
 - ui: Contiene la interfaz de usuario, adaptador y el viewmodel.
 
@@ -27,7 +27,7 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
 
 ## Estructura de la app
-![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/Estructura_De_La_App.png)
 
 ## Imagenes de la app
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
