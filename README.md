@@ -27,7 +27,7 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
 
 ## Estructura de la app
-![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/Estructura_De_La_App.png)
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/estructura_app.png)
 
 ## Imagenes de la app
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
