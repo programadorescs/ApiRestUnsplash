@@ -1,5 +1,5 @@
-# Consumo de la Api Unsplash usando Retrofit, patrón MVVM e inyección de dependencia con Dagger Hilt
-Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de este endpoint es que la api_key esta al final de la misma url, para ello haremos uso los Interceptor para agregar dicha api_key.
+# Consumo de la Api Unsplash usando Retrofit, ROOM, patrón MVVM e inyección de dependencia con Dagger Hilt
+Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de este endpoint es que la api_key esta al final de la misma url, para ello haremos uso los Interceptor para agregar dicha api_key. El resultado obtenido de la api será almacenado en ROOM.
 
 ## Requisitos
 
@@ -13,7 +13,7 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - Retrofit: Para el consumo de la api.
 - ViewModel y LiveData: Para la implementación del patrón MVVM.
 - Dagger Hilt: Para la inyección de dependencias.
-- Coil para cargar las imagenes.
+- Coil: Sera usado para cargar las imagenes.
 - ROOM: Para almacenar la info recibida de la api.
 
 ## Estructura del proyecto
@@ -23,11 +23,13 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - domain: Contiene el modelo, repositorio y el use case.
 - ui: Contiene la interfaz de usuario, adaptador y el viewmodel.
 
-## Imagenes del resultado del endpoint
+## Resultado del endpoint
+De todo el resultado obtenido del endpoint, estos serán los campos que manejaremos.
+
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/respuesta_json.png)
 
 ## Estructura de la app
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/estructura_app.png)
 
-## Imagenes de la app
+## Imagen de la app
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
