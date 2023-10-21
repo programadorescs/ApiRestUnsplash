@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import pe.pcs.apirestunsplash.core.ResponseState
+import pe.pcs.apirestunsplash.core.makeCall
 import pe.pcs.apirestunsplash.domain.model.Photo
 import pe.pcs.apirestunsplash.domain.usecase.getListUnsplashUseCase
 import javax.inject.Inject
@@ -26,7 +27,9 @@ class MainActivityViewModel @Inject constructor(
         viewModelScope.launch {
             _stateList.value = ResponseState.Loading()
 
-            getListUnsplashUseCase().let {
+            makeCall {
+                getListUnsplashUseCase()
+            }.let {
                 if (it is ResponseState.Success)
                     _listPhoto.value = it.data
 

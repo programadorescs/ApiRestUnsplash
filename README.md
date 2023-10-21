@@ -7,6 +7,7 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 - Android Gradle Plugin Version 8.1.2
 - Gradle Version 8.0
 - Kotlin 1.9.10 o superior.
+- Api key, para ello deberá de ingresar a la página (https://unsplash.com/developers) y registrarse para obtener dicha api key.
 
 ## Dependencias
 
