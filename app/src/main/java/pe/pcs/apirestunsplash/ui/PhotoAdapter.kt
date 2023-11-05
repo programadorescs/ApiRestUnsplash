@@ -9,6 +9,7 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import pe.pcs.apirestunsplash.databinding.ItemsResultBinding
 import pe.pcs.apirestunsplash.domain.model.Photo
+import pe.pcs.apirestunsplash.ui.utils.UtilsDate
 
 class PhotoAdapter() : ListAdapter<Photo, PhotoAdapter.BindViewHolder>(DiffCallback) {
 
@@ -31,7 +32,7 @@ class PhotoAdapter() : ListAdapter<Photo, PhotoAdapter.BindViewHolder>(DiffCallb
             }
             binding.tvDescripcion.text = entidad.description
             binding.tvLike.text = "Likes: ${entidad.likes.toString()}"
-            binding.tvDate.text = entidad.createdAt
+            binding.tvDate.text = UtilsDate.formatearFecha(entidad.createdAt)
         }
     }
 

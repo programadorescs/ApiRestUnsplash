@@ -6,8 +6,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import pe.pcs.apirestunsplash.core.ResponseState
-import pe.pcs.apirestunsplash.core.makeCall
+import pe.pcs.apirestunsplash.ui.utils.ResponseState
+import pe.pcs.apirestunsplash.ui.utils.makeCall
 import pe.pcs.apirestunsplash.domain.model.Photo
 import pe.pcs.apirestunsplash.domain.usecase.getListUnsplashUseCase
 import javax.inject.Inject

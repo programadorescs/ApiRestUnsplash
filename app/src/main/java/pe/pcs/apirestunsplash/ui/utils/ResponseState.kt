@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.core
+package pe.pcs.apirestunsplash.ui.utils
 
 sealed class ResponseState<T> {
     class Loading<T> : ResponseState<T>()

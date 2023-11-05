@@ -6,4 +6,6 @@ interface UnsplashRepository {
 
     suspend fun getList(): List<Photo>
 
+    suspend fun getUrlList(): List<Photo>
+
 }

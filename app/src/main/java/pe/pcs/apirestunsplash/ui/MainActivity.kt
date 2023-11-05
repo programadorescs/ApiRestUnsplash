@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import pe.pcs.apirestunsplash.core.ResponseState
-import pe.pcs.apirestunsplash.core.UtilsMessage
+import pe.pcs.apirestunsplash.ui.utils.ResponseState
+import pe.pcs.apirestunsplash.ui.utils.UtilsMessage
 import pe.pcs.apirestunsplash.databinding.ActivityMainBinding
 
 @AndroidEntryPoint

@@ -15,10 +15,10 @@ class UnsplashRepositoryImpl @Inject constructor(
 ) : UnsplashRepository {
 
     override suspend fun getList(): List<Photo> {
-        if (dao.countPhoto() == 0) {
-//            dao.deleteUrlAll()
-//            dao.deleteAll()
+        //dao.deleteUrlAll()
+        //dao.deleteAll()
 
+        if (dao.countPhoto() == 0) {
             val listPhotoAndUrls = mutableListOf<PhotoAndUrls>()
 
             api.getPhotos().forEach {
@@ -43,13 +43,13 @@ class UnsplashRepositoryImpl @Inject constructor(
         }
 
         return listPhoto
+    }
 
-        /*
+    override suspend fun getUrlList(): List<Photo> {
         // Usado para trabajar unicamente con la api (sin almacenar los datos en room)
         return api.getPhotos().map {
             it.toDomain()
         }
-         */
     }
 
 }
