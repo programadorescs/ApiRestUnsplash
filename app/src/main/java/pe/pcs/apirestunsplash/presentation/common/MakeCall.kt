@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.ui.utils
+package pe.pcs.apirestunsplash.presentation.common
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

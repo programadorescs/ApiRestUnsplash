@@ -33,4 +33,15 @@ De todo el resultado obtenido del endpoint, estos serán los campos que manejare
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/estructura_app.png)
 
 ## Imagen de la app
+
+### Login
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/api_login.png)
+
+### Registrar una nueva cuenta
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/api_cuenta.png)
+
+### Datos de la api
 ![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/pantalla_01.png)
+
+### Info de la app
+![Image text](https://github.com/programadorescs/ApiRestUnsplash/blob/master/app/src/main/assets/api_info.png)

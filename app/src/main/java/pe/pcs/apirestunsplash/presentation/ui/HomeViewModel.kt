@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.ui
+package pe.pcs.apirestunsplash.presentation.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,14 +6,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import pe.pcs.apirestunsplash.ui.utils.ResponseState
-import pe.pcs.apirestunsplash.ui.utils.makeCall
+import pe.pcs.apirestunsplash.presentation.common.ResponseState
+import pe.pcs.apirestunsplash.presentation.common.makeCall
 import pe.pcs.apirestunsplash.domain.model.Photo
 import pe.pcs.apirestunsplash.domain.usecase.getListUnsplashUseCase
 import javax.inject.Inject
 
 @HiltViewModel
-class MainActivityViewModel @Inject constructor(
+class HomeViewModel @Inject constructor(
     private val getListUnsplashUseCase: getListUnsplashUseCase
 ) : ViewModel() {
 

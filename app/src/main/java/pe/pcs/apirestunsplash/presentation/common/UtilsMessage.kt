@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.ui.utils
+package pe.pcs.apirestunsplash.presentation.common
 
 import android.content.Context
 import android.widget.Toast

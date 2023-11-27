@@ -1,4 +1,4 @@
-package pe.pcs.apirestunsplash.ui
+package pe.pcs.apirestunsplash.presentation.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +9,7 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import pe.pcs.apirestunsplash.databinding.ItemsResultBinding
 import pe.pcs.apirestunsplash.domain.model.Photo
-import pe.pcs.apirestunsplash.ui.utils.UtilsDate
+import pe.pcs.apirestunsplash.presentation.common.UtilsDate
 
 class PhotoAdapter() : ListAdapter<Photo, PhotoAdapter.BindViewHolder>(DiffCallback) {
 

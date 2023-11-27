@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">ApiRestUnsplash</string>
     <string name="title_api_unsplash">Api Unsplash</string>
+    <string name="login">LOGIN</string>
+    <string name="nickname">Nickname</string>
+    <string name="password">Password</string>
+    <string name="acceder">ACCEDER</string>
+    <string name="crear_cuenta">¿No tienes cuenta? registrate AQUI</string>
+    <string name="name">Name</string>
+    <string name="register">REGISTER</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Info</string>
+    <string name="home">Home</string>
+    <string name="registrar_cuenta">Registrar cuenta</string>
+    <string name="main_title">Api Unsplash</string>
+    <string name="text_subtitle">Acceso a la api de Unsplash haciendo uso de clean arquitecture, patron MVVM, retrofit, ROOM, livedata, inyeccion de dependencia con dagger hilt, corrutinas, etc.\nLa particularidad de este endpoint es que la api_key esta al final de la misma url, para ello haremos uso los Interceptor para agregar dicha api_key. El resultado obtenido de la api será almacenado en ROOM.</string>
 </resources>

@@ -9,13 +9,16 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import pe.pcs.apirestunsplash.data.utils.Constants
+import pe.pcs.apirestunsplash.data.common.Constants
 import pe.pcs.apirestunsplash.data.local.dao.PhotoDao
+import pe.pcs.apirestunsplash.data.local.dao.UserDao
 import pe.pcs.apirestunsplash.data.local.database.AppDatabase
 import pe.pcs.apirestunsplash.data.remote.api.UnsplashApi
 import pe.pcs.apirestunsplash.data.repository.UnsplashRepositoryImpl
-import pe.pcs.apirestunsplash.data.utils.HeaderInterceptor
+import pe.pcs.apirestunsplash.data.repository.UserRepositoryImp
+import pe.pcs.apirestunsplash.data.common.HeaderInterceptor
 import pe.pcs.apirestunsplash.domain.repository.UnsplashRepository
+import pe.pcs.apirestunsplash.domain.repository.UserRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -72,6 +75,18 @@ object InjectionModule {
     @Provides
     fun providePhotoDao(db: AppDatabase): PhotoDao {
         return db.photoDao()
+    }
+
+    @Singleton
+    @Provides
+    fun provideUserDao(db: AppDatabase): UserDao {
+        return db.userDao()
+    }
+
+    @Singleton
+    @Provides
+    fun provideUserRepository(dao: UserDao): UserRepository {
+        return UserRepositoryImp(dao)
     }
 
 }

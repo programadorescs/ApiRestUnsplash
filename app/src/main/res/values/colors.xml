@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#de3c62</color>
-    <color name="purple_500">#7c083c</color>
-    <color name="purple_700">#7c083c</color>
-    <color name="teal_200">#fed473</color>
-    <color name="teal_700">#f98b00</color>
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#303F9F</color>
+
+    <color name="md_theme_light_tertiary">#7B5734</color>
+    <color name="md_theme_light_tertiaryContainer">#FFDCBF</color>
+    <color name="md_theme_dark_primary">#FFB1C5</color>
+    <color name="md_theme_dark_onPrimary">#65002F</color>
+    <color name="md_theme_dark_primaryContainer">#881545</color>
+
+    <color name="md_theme_light_primaryContainer">#FFD9E1</color>
+    <color name="primary">#A8305C</color>
+    <color name="primaryDark">#3F001A</color>
+    <color name="secondary">#f98b00</color>
+    <color name="accent">#fed473</color>
+    <color name="gold">#ffe78f</color>
+    <color name="black_alpha">#98000000</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="colorTransparente_90">#E6FFFFFF</color>
+    <color name="colorTransparente_80">#CCFFFFFF</color>
+    <color name="colorTransparente_70">#B3FFFFFF</color>
+    <color name="colorTransparente_50">#80FFFFFF</color>
+    <color name="colorTransparente_30">#4DFFFFFF</color>
+    <color name="colorTransparente_15">#26FFFFFF</color>
+    <color name="colorTransparente_0">#00FFFFFF</color>
+
 </resources>

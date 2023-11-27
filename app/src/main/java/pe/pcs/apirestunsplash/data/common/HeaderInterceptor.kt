@@ -1,8 +1,7 @@
-package pe.pcs.apirestunsplash.data.utils
+package pe.pcs.apirestunsplash.data.common
 
 import okhttp3.Interceptor
 import okhttp3.Response
-import pe.pcs.apirestunsplash.data.utils.Constants
 import javax.inject.Inject
 import javax.inject.Singleton
 
