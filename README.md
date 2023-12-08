@@ -3,9 +3,9 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 
 ## Requisitos
 
-- Android Studio Giraffe | 2022.3.1 Patch 4 o superior.
-- Android Gradle Plugin Version 8.1.4
-- Gradle Version 8.0
+- Android Studio Hedgehog | 2023.1.1 o superior.
+- Android Gradle Plugin Version 8.2.0
+- Gradle Version 8.2
 - Kotlin 1.9.10 o superior.
 - Api key, para ello deberá de ingresar a la página (https://unsplash.com/developers) y registrarse para obtener dicha api key.
 
@@ -19,10 +19,10 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 
 ## Estructura del proyecto
 
-- core: Contiene las clases comunes para la implementación de mensajes, constantes, modulo de inyeccion de dependencia y el manejo de los estados de respuestas.
+- di: Contiene las  inyeccion de dependencia a nivel de módulo.
 - data: Contiene las clases, interfaces para el consumo de la api, manejo de room, implementacion del repositorio, etc.
 - domain: Contiene el modelo, repositorio y el use case.
-- ui: Contiene la interfaz de usuario, adaptador y el viewmodel.
+- presentation: Contiene la interfaz de usuario, funcionalidades comunes, adaptador y el viewmodel.
 
 ## Resultado del endpoint
 De todo el resultado obtenido del endpoint, estos serán los campos que manejaremos.
