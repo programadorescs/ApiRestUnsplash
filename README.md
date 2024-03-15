@@ -3,9 +3,9 @@ Mediante este ejemplo accederemos a la api de Unsplash, la particularidad de est
 
 ## Requisitos
 
-- Android Studio Hedgehog | 2023.1.1 Patch 2 o superior.
-- Android Gradle Plugin Version 8.2.2
-- Gradle Version 8.2
+- Android Studio Iguana | 2023.2.1 o superior.
+- Android Gradle Plugin Version 8.3.0
+- Gradle Version 8.4
 - Kotlin 1.9.22 o superior.
 - Api key, para ello deberá de ingresar a la página (https://unsplash.com/developers) y registrarse para obtener dicha api key.
 
